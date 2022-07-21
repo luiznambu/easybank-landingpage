@@ -1,6 +1,6 @@
 .header {
 
-    &.open { // classe para ativar transform do menu hamburger
+    &.open { // classe para ativar transform do menu hamburger para um X 
        
         .header__toggle{
             > span:first-child { // rotacao do primeiro span 
@@ -35,8 +35,9 @@
         background: white;
         text-align: center;
         border-radius: 5px;
+        z-index: 1;
         //left: 50%;
-       // transform: translateX(-50%); uma forma de centralizar position-absolute
+        //transform: translateX(-50%); uma forma de centralizar position-absolute
     
         a {
             color: $darkBlue;
