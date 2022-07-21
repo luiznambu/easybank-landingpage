@@ -2,6 +2,7 @@
 
 <p>Landing page feito como estudo de JavaScript e SASS seguindo orientação por vídeo de Jessica Chan. <br>
 Diferencas minimas de execucao como animacao de icones com hover de features no modo desktop.<br>
+O front-end da landing page easybank pode ser acessada aqui: https://nambu-easybank.netlify.app
 Alguns dos aprendizados obtidos sao:<br></p>
 - Estilizacao web utilizando SASS/SCSS. <br>
 - Criacao de animacoes como botao de menu hamburguer para X com 'transform: rotate' (imagem 1 para 2), e animacoes de hover em geral.<br>
