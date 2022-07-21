@@ -5,7 +5,7 @@ Diferencas minimas de execucao como animacao de icones com hover de features no 
 Alguns dos aprendizados obtidos sao:<br></p>
 - Estilizacao web utilizando SASS/SCSS. <br>
 - Criacao de animacoes como botao de menu hamburguer para X com 'transform: rotate' (imagem 1 para 2), e animacoes de hover em geral.<br>
-- Criacao de pagina responsiva para mobile, table e desktop, utilizando '@media breakpoint($size)'.<br>
+- Criacao de pagina responsiva para mobile, tablet e desktop, utilizando '@media breakpoint($size)'.<br>
 - Criacao de grid utilizando 'display: flex' e 'grid-template(columns/rows/areas)' <br><br>
 <div>
   <img src="https://user-images.githubusercontent.com/86805124/180301088-cdac477b-25f7-4eda-b303-0d5a0d30197b.png" height="500">
