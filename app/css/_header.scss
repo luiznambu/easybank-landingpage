@@ -1,0 +1,116 @@
+.header {
+
+    &.open { // classe para ativar transform do menu hamburger
+       
+        .header__toggle{
+            > span:first-child { // rotacao do primeiro span 
+                transform: rotate(45deg);
+            }
+    
+            > span:nth-child(2) { // some o span do meio
+                opacity: 0;
+            }
+    
+            > span:last-child { // rotacao do ultimo span
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 3.5625rem; //top com espaco de 57px para nao sobrepor nav bar (57/16)
+        left: 0; bottom: 0; right: 0; //overlay ocupa toda a tela lateral e abaixo
+        background-image: linear-gradient($darkBlue, transparent);
+    }
+
+    &__menu {
+        position: absolute;
+        display: grid;  // organizar os links em coluna
+        width: calc(100% - 3rem);
+        margin: 0px 1.5rem;
+        margin-top: 1.5rem;
+        padding: 1.625rem; // 26px acima dos boxes de cada link
+        background: white;
+        text-align: center;
+        border-radius: 5px;
+        //left: 50%;
+       // transform: translateX(-50%); uma forma de centralizar position-absolute
+    
+        a {
+            color: $darkBlue;
+            padding: 0.625rem; // 10px abaixo e acima do texto do link
+        }
+    }
+    
+    nav {
+        position: relative;
+        background-color: white;         
+        padding-top: 1.0625rem;
+        padding-bottom: 1.5rem;
+    }
+
+    &__logo { // logo no topo esquerdo
+        img {
+            width: 8.8125rem;
+            height: 1.375rem;
+        }
+    }
+
+    &__toggle { //ativa ou desativa o mobile menu e animation
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $darkBlue;
+            transition: all 400ms;
+            transform-origin: 3px 1px; // ponto onde a rotacao comeca 
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__links { //links no menu do header 
+        a {
+            font-size: $font-small;
+            transition: color 400ms ease-in-out;
+            position: relative;
+
+            &::before { // efeito de sombra no hover dos links do menu
+                content: "";
+                position: absolute;
+                display: block;
+                height: 5px;
+                right: 0;
+                left: 0;
+                bottom: -30px;
+                background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+                opacity: 0;
+                transition: opacity 400ms ease-in-out;
+            }
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $darkBlue;
+
+                &::before { //ativa o efeito de sombra nos menus com hover
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__cta {  //botao de request invite no header
+        color: white;
+
+    }
+
+
+}
+
