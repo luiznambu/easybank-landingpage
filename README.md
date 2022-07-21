@@ -1,6 +1,7 @@
 # easybank-landingpage
 
 <p>Landing page feito como estudo de JavaScript e SASS seguindo orientação por vídeo de Jessica Chan. <br>
+Esse projeto foi retirado do Frontend Mentor, o desafio pode ser acessado aqui: https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN <br>
 Diferencas minimas de execucao como animacao de icones com hover de features no modo desktop.<br>
 O front-end da landing page easybank pode ser acessada aqui: https://nambu-easybank.netlify.app <br>
 Alguns dos aprendizados obtidos sao:<br></p>
